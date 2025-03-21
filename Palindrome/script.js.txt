@@ -1,0 +1,27 @@
+document.getElementById("check-btn").addEventListener("click", function() {
+            let inputField = document.getElementById("text-input");
+            let resultDiv = document.getElementById("result");
+            let text = inputField.value.trim();
+
+            if (text === "") {
+                alert("Please input a value");
+                return;
+            }else if(text==="A"){
+                result.textContent = "A est un palindrome";
+            }
+
+            function cleanText(str) {
+                return str.toLowerCase().replace(/[^a-z0-9]/g, "");
+            }
+
+            let cleanedText = cleanText(text);
+            let reversedText = cleanedText.split("").reverse().join("");
+
+            if (cleanedText === reversedText) {
+                resultDiv.textContent = `${text} is a palindrome`;
+            } else {
+                resultDiv.textContent = `${text} is not a palindrome`;
+            }
+        });
+
+

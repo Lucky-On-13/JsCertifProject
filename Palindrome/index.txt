@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Firecode Palindrome</h1>
+    <form>
+      <div class="container">  
+      <label>
+        Enter in text to check for a palindrome:
+      </label>
+      <div>
+      <input type="text" id="text-input" required>
+      <button type="submit" id="check-btn">Check</button>
+      </div>
+      <div>
+        <span id="result">
+        </span>
+      </div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
